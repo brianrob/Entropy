@@ -57,3 +57,6 @@ msbuild Projects\Projects.sln /p:Configuration=Release
 
 msbuild Projects\CPVM01\CPVM01.sln /t:Restore /p:Configuration=Release
 msbuild Projects\CPVM01\CPVM01.sln /p:Configuration=Release
+
+msbuild Projects\CPVM02\CPVM02.sln /t:Restore /p:Configuration=Release
+msbuild Projects\CPVM02\CPVM02.sln /p:Configuration=Release

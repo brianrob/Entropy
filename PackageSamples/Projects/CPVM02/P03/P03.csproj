@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+	<!--
+	    This shows what happens when CPVM is used and two projects that are both referenced from a third project (this one)
+		reference the same package, but one specifies a version override.
+		
+		Regardless of the central version, the standard rules of version selection applies for this project, where there are
+		no version overrides specified.  The version override does apply to the project that defines it (in this case, P01).
+	-->
+    <ProjectReference Include="..\P01\P01.csproj" />
+    <ProjectReference Include="..\P02\P02.csproj" />
+  </ItemGroup>
+</Project>
